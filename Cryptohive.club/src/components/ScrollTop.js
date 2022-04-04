@@ -10,7 +10,7 @@ box-sizing: border-box;
 margin: 0;
 padding: 0;
 color: #fff;
-background-color: tomato;
+background-color: #2e91f9;
 font-size: 12px;
 position: fixed;
 right: 1rem;

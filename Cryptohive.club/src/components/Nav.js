@@ -9,7 +9,7 @@ const Section = styled.section`
 /* width: 100vw; */
 position: relative;
 /* background: linear-gradient(to right, #ccc, #eee) */
-background:  #FF5733 ;
+background:  #093691;
 
 `
 const NavBar =styled.nav`

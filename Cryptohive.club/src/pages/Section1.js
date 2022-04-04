@@ -16,8 +16,8 @@ padding: 70px 70px;
 const Title = styled.h1`
 font-family: 'Oswald', sans-serif;
 font-weight: 600;
-color: tomato;
-border-bottom: 2px solid tomato;
+color: #093691;
+border-bottom: 2px solid #093691;
 width: fit-content;
 margin: 0 auto;
 `
@@ -29,7 +29,7 @@ font-weight: 800;
 justify-content: left;
 text-align: justify;
 span{
-    color: tomato;
+    color: #2e91f9;
 }
 `
 

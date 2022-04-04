@@ -15,7 +15,7 @@ text-align: center;
 `
 const Title1 = styled.h1`
 font-weight: 600;
-color: tomato;
+color: #2e91f9;
 /* border-bottom: 2px solid #555; */
 width: fit-content;
 margin: 30px auto;

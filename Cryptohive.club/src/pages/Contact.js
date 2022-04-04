@@ -16,7 +16,7 @@ padding: 70px;
 }
 `
 const Container = styled.div`
-background: tomato;
+background: #2e91f9;
 padding: 40px 12px;
 border-radius: 10px;
 @media (max-width: 64em){

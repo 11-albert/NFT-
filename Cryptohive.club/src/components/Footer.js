@@ -11,7 +11,7 @@ background: #fff;
 const Footer1 = styled.footer`
 width: 100%;
 /* background: linear-gradient(to right, #eee, #2c3e50); */
-background: tomato;
+background: #093691;
 color: #fff;
 padding: 100px 0 30px;
 border-top-left-radius: 125px;
@@ -101,7 +101,7 @@ const Form = styled.form`
   }
 `
 const SocialIcon = styled.div`
-  .fab{
+  .fab, .fa-brands{
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -177,8 +177,8 @@ const Underline = styled.div`
   } */
 `
 const Title = styled.p`
-  font-size: 18px;
-  font-size: 900;
+  font-size: 24px;
+  font-weight: 800;
   color: #fff;
 `
 
@@ -200,7 +200,7 @@ const Footer = () => {
         <Row>
           <Col>
           <LogoText onClick={()=> scrollTo('nav')}>R.</LogoText>
-          <Title>CryptoHive.club</Title>
+          <Title>NFTsharks.club</Title>
           </Col>
           <Col>
           <h3><Underline><span></span></Underline>Links</h3>
@@ -220,10 +220,11 @@ const Footer = () => {
             <button><i class='fas fa-arrow-right'></i></button>
           </Form> */}
           <SocialIcon>
-          <i class='fab fa-facebook-f'></i>
-          <i class='fab fa-twitter'></i>
+          <a href="https://www.facebook.com/nftsharks.club"><i class='fab fa-facebook-f'></i></a>
+          <a href="https://twitter.com/nftsharksclub"><i class='fab fa-twitter'></i></a>
           <i class='fab fa-whatsapp'></i>
-          <i class='fab fa-linkedin'></i>
+          <a href="www.linkedin.com/in/nftsharksclub"><i class='fab fa-linkedin'></i></a>
+          <a href="tiktok.com/@nftsharks.club"><i class="fa-brands fa-tiktok"></i></a>
           </SocialIcon>
           </Col>
         </Row>

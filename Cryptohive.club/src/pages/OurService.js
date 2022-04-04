@@ -15,14 +15,14 @@ const Section = styled.section`
 `
 const Title = styled.h1`
     font-weight: 800;
-    color: tomato;
-    border-bottom: 2px solid tomato;
+    color: #093691;
+    border-bottom: 2px solid #093691;
     width: fit-content;
     margin: 0 auto;
     font-family: 'Oswald', sans-serif;
 `
 const Container = styled.div`
-background-color: tomato;
+background-color: #2e91f9;
 padding: 0px 50px;
 border-radius: 10px;
 display: flex;
@@ -49,12 +49,13 @@ div{
 const SubTitle = styled.h2`
 color: #fff;
 border-bottom: 1px solid #fff;
-font-weight: 600;
+font-size: 34px;
+font-weight: 800;
 width: fit-content;
 margin-bottom: 16px;
 `
 const SubText = styled.p`
-color: #000;
+color: #fff;
 font-weight: bolder;
 margin-top: 5px;
 text-align: justify;

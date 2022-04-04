@@ -8,7 +8,7 @@ font-weight: 600;
 text-align: justify;
 span{
   font-family: 'Montserrat', sans-serif;
-  color: tomato;
+  color: #093691;
   
   
 }

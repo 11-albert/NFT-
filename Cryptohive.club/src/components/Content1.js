@@ -17,7 +17,7 @@ const ClientAbout = styled.h3`
   font-weight: 600;
   font-family: 'Akaya Telivigala', cursive;
   text-align: end;
-  color: tomato;
+  color: #2e91f9;
   @media (max-width: 64em){
    font-size: 14px;
   text-align: right;

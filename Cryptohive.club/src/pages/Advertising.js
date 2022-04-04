@@ -24,8 +24,8 @@ const Title = styled.h1`
 display: flex;
 justify-content: center;
 margin: 1rem auto;
-color: tomato;
-border-bottom: 2px solid tomato;
+color: #093691;
+border-bottom: 2px solid #093691;
 width: fit-content;
 font-family: 'Oswald', sans-serif;
 
