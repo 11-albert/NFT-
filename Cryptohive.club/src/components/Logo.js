@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import logoImage from '../Images/nft-logo.svg'
 
 
 const LogoText = styled.h1`
@@ -19,11 +19,14 @@ display: flex;
 &:hover{
     transform: scale(1.1);
 }
+img{
+  width: 50px;
+}
 `
 const Logo = () => {
   return (
     <LogoText>
-           R.        
+           <img src={logoImage}/>        
     </LogoText>
   )
 }

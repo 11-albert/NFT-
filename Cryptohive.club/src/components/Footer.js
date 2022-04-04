@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import logoImage from '../Images/nft-logo.svg'
 
 
 
@@ -48,6 +49,10 @@ font-family: 'Akaya Telivigala', cursive;
 
 &:hover{
     transForm: scale(0.9);
+  
+}
+img{
+  width: 100px;
 }
 `
 const Menu = styled.ul`
@@ -199,7 +204,9 @@ const Footer = () => {
       <Footer1  id="footer">
         <Row>
           <Col>
-          <LogoText onClick={()=> scrollTo('nav')}>R.</LogoText>
+          <LogoText onClick={()=> scrollTo('nav')}>
+            <img src={logoImage}/>
+          </LogoText>
           <Title>NFTsharks.club</Title>
           </Col>
           <Col>
