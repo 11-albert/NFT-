@@ -17,10 +17,10 @@ padding: 70px;
 `
 const Container = styled.div`
 background: #2e91f9;
-padding: 40px 12px;
+padding: 40px 100px;
 border-radius: 10px;
 @media (max-width: 64em){
-    
+    padding: 40px 12px;
 }
 `
 const Title = styled.h1`
@@ -54,7 +54,8 @@ input{
     background: transparent;
     &::placeholder{
         color: #fff;
-        font-weight: 600;
+        font-size: 15px;
+        font-weight: 800;
     }
   
      
@@ -69,7 +70,8 @@ background: transparent;
 padding: 12px 12px;
 &::placeholder{
     color: #fff;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 800;
 }
 `
 const Btn = styled.button`
@@ -78,8 +80,9 @@ outline: none;
 border: none;
 color: #000;
 background-color: #fff;
+font-size: 14px;
 font-weight: 800;
-padding: 0.8rem 2.5rem;
+padding: 0.8rem 1.5rem;
 border-radius: 50px;
 transition: all .2s ease;
 position: relative;

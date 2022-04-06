@@ -59,6 +59,7 @@ list-style: none;
 const MenuItem = styled.li`
 margin: 0 1rem;
 cursor: pointer;
+font-size: 18px;
 color: #fff;
 font-weight: 800;
 
@@ -131,8 +132,9 @@ outline: none;
 border: none;
 color: #000;
 background-color: #fff;
+font-size: 15px;
 font-weight: 800;
-padding: 0.8rem 2.5rem;
+padding: 0.8rem 2.0rem;
 border-radius: 50px;
 transition: all .2s ease;
 position: relative;
@@ -192,13 +194,13 @@ const Nav = () => {
           <MenuItem>
           <div className='mobile'>
             {/* <Button text="Contact" onClick={()=> scrollTo('About')}/> */}
-            <Btn onClick={()=> scrollTo('contact')}>Contact</Btn>
+            <Btn onClick={()=> scrollTo('contact')}>Contact Us</Btn>
           </div>
           </MenuItem>
         </Menu>
           <div className='desktop'>
             {/* <Button text="Contact" onClick={()=> scrollTo('services')} /> */}
-            <Btn onClick={()=> scrollTo('contact')}>Contact</Btn>
+            <Btn onClick={()=> scrollTo('contact')}>Contact Us</Btn>
           </div>
       </NavBar>
     </Section>

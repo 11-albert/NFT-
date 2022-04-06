@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import logoImage from '../Images/nft-logo.svg'
+import logoImage from '../Images/logo.png'
 
 
 
@@ -42,7 +42,7 @@ const Col =styled.div`
 const LogoText = styled.h1`
 color: #fff;
 font-size: 80px;
-margin-bottom: 80px;
+margin-bottom: 0px;
 cursor: pointer;
 transition: all .2s ease;
 font-family: 'Akaya Telivigala', cursive;
@@ -52,7 +52,11 @@ font-family: 'Akaya Telivigala', cursive;
   
 }
 img{
-  width: 100px;
+  // background: pink;
+  width: 100%;
+  @media (max-width: 64em){
+    width: 50%;
+  }
 }
 `
 const Menu = styled.ul`
@@ -63,6 +67,7 @@ const Items= styled.li`
   margin-bottom: 12px;
   cursor: pointer;
   color: #fff;
+  font-size: 20px;
   font-weight: 600;
   a{
     text-decoration: none;
@@ -116,7 +121,7 @@ const SocialIcon = styled.div`
     color: #000;
     background: #fff;
     margin-right: 15px;
-    margin-top: 70px;
+    margin-top: 40px;
     cursor: pointer;
     
     @media (max-width: 70em){
@@ -185,8 +190,37 @@ const Title = styled.p`
   font-size: 24px;
   font-weight: 800;
   color: #fff;
-`
 
+`
+const ContactContainer = styled.div`
+margin-top: 5px;
+
+.fa-solid, .fa-brands{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: #000;
+  background: #fff;
+  margin-right: 15px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+h3{
+  font-size: 20px;
+}
+p{
+  margin-top: 0px;
+  font-size: 18px;
+  font-weight: 800;
+}
+`
+const SubTitle = styled.h3`
+font-size: 20px;
+font-weight: 800;
+`
 
   const scrollTo = (id)=>{
     let element = document.getElementById(id);
@@ -207,10 +241,10 @@ const Footer = () => {
           <LogoText onClick={()=> scrollTo('nav')}>
             <img src={logoImage}/>
           </LogoText>
-          <Title>NFTsharks.club</Title>
+          {/* <Title>NFTsharks.club</Title> */}
           </Col>
           <Col>
-          <h3><Underline><span></span></Underline>Links</h3>
+          <SubTitle><Underline><span></span></Underline>Links</SubTitle>
           <Menu>
             <Items onClick={()=> scrollTo('nav')}>Home</Items>
             <Items onClick={()=> scrollTo('About')}>About</Items>
@@ -220,19 +254,26 @@ const Footer = () => {
           </Menu>
           </Col>
           <Col>
-          <h3><Underline><span></span></Underline>Social Links</h3>
+          <SubTitle><Underline><span></span></Underline>Contact</SubTitle>
           {/* <Form>
             <i class='fas fa-envelope'></i>
             <input type="email" name='user_email' placeholder='Enter your email id' required/>
             <button><i class='fas fa-arrow-right'></i></button>
           </Form> */}
+        
           <SocialIcon>
-          <a href="https://www.facebook.com/nftsharks.club"><i class='fab fa-facebook-f'></i></a>
-          <a href="https://twitter.com/nftsharksclub"><i class='fab fa-twitter'></i></a>
-          <i class='fab fa-whatsapp'></i>
-          <a href="www.linkedin.com/in/nftsharksclub"><i class='fab fa-linkedin'></i></a>
-          <a href="tiktok.com/@nftsharks.club"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://www.facebook.com/nftsharks.club" target="_blank"><i class='fab fa-facebook-f'></i></a>
+          <a href="https://twitter.com/nftsharksclub" target="_blank"><i class='fab fa-twitter'></i></a>
+          <a href='https://t.me/nftsharksclub' target="_blank"><i class="fa-brands fa-telegram"></i></a>
+          <a href="https://www.linkedin.com/company/80561984" target="_blank"><i class='fab fa-linkedin'></i></a>
+          <a href="https://tiktok.com/@nftsharks.club" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
           </SocialIcon>
+          <ContactContainer>
+            
+            <p><b><i class="fa-solid fa-envelope-open-text"></i></b> rizwan@nftsharks.club</p>
+            <p><b><i class="fa-brands fa-whatsapp"></i> </b> +923147765574</p>
+          
+          </ContactContainer>
           </Col>
         </Row>
         <Hr />

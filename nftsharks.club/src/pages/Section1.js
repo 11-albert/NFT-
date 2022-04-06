@@ -26,8 +26,8 @@ text-align: center;
 margin-top: 30px;
 font-size: 18px;
 font-weight: 800;
-justify-content: left;
-text-align: justify;
+justify-content: center;
+text-align: center;
 span{
     color: #2e91f9;
 }
