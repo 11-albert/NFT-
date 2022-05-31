@@ -30,7 +30,7 @@ const ConvertVideo3 = () => {
   return (
     <Videocontainer>
        
-        <embed src={gif}  />
+        <embed data-aos="fade-left" data-aos-duration="1500" src={gif}  />
     </Videocontainer>
   )
 }

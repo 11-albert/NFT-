@@ -1,13 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 import Gif from '../video/crypto cows testimon.gif'
+import "../components/styleAttribute.css"
 
 
-const ContentContainer = styled.p`
+const ContentContainer = styled.div`
 font-size: 44px;
 font-weight: 800;
 color: #2c3e50;
-
+width: 100%;
 @media (max-width: 64em){
    font-size: 20px;
   text-align: center;
@@ -25,32 +26,65 @@ const ClientAbout = styled.h3`
  }
 `
 const ClientImage = styled.div`
-width: 10%;
+width: 100%;
+
 display: flex;
+flex-direction: column;
 justify-content: center;
 align-items: center;
 margin: 0 auto;
-
+z-index: 1;
 
 embed{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  border-radius: 50%;
+  border-radius: 10px;
+  position: relative;
+
 }
+
+`
+const Overlay = styled.div`
+`
+const Card = styled.div`
+
 `
 const Content1 = () => {
   return (
     <>
-    <em>
+    <div className="container">
+    <div className='card'>
+         <div className="imageBox">
+            <embed src={Gif}  />
+         </div>
+         <div className="contentBox">
+           <div className="content">
+             <h3>CryptoCows</h3>
+           </div>
+           
+         </div>
+       </div>
+    </div>
+       
+
+
+
+    {/* <em>
       <ContentContainer>
-        <ClientImage>
-          <embed src={Gif}/>
-        </ClientImage>
+        <Card>
+          <ClientImage>
+            <embed src={Gif}  />
+          </ClientImage>
+          <Overlay>
+            <h1>hello</h1>
+          </Overlay>
+        </Card>
+        
       "Super professional, super kind. Excellent work done by this guys. 100% will work again with them"<br/>
      <ClientAbout>-from CryptoCows</ClientAbout>
-    </ContentContainer></em>
+    </ContentContainer></em> */}
     
     </>
   )

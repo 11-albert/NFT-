@@ -158,7 +158,7 @@ const OurService = () => {
    
   return (
     <Section id="services"> 
-        <Title>OUR SERVICES</Title>
+        <Title data-aos="zoom-in" data-aos-duration="1500">OUR SERVICES</Title>
         <Container>
         
             <div>

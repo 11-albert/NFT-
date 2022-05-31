@@ -20,7 +20,7 @@ span{
 `
 const Content2 = () => {
   return (
-    <ContentContainer><em><span>NFTs are a promising future for the current generation to make valuable investment.</span></em><br/><br/>
+    <ContentContainer  data-aos="fade-right" data-aos-duration="1500"><em><span  data-aos="fade-right" data-aos-duration="1500">NFTs are a promising future for the current generation to make valuable investment.</span></em><br/><br/>
     Our NFT marketing services offer strong marketing strategies to help you complete in the global market.
     We have professional marketing experts who can help your dream business succeed by providing cost-effective
     NFT marketing solutions. Why are you still debating whether or not to start your business?<br/>

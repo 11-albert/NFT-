@@ -249,7 +249,7 @@ const Footer = () => {
             <Items onClick={()=> scrollTo('nav')}>Home</Items>
             <Items onClick={()=> scrollTo('About')}>About</Items>
             <Items onClick={()=> scrollTo('services')}>Service</Items>
-            <Items onClick={()=> scrollTo('testimonials')}>Testimonials</Items>
+            <Items onClick={()=> scrollTo('testimonials')}>Clients</Items>
 
           </Menu>
           </Col>

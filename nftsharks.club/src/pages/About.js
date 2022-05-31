@@ -14,6 +14,7 @@ const Section = styled.section`
  width: 100%;
  background-color: #fff;
  padding: 70px;
+ overflow-x: hidden;
  /* background-color: pink; */
  @media (max-width: 64em){
   padding: 40px 12px;
@@ -82,7 +83,7 @@ align-items: center;
 const About = () => {
     return (
         <Section id="About">
-            <Title>ABOUT US</Title>
+            <Title data-aos="zoom-in" data-aos-duration="1500">ABOUT US</Title>
             <Container>
                 <Box>
                 <Content2/>

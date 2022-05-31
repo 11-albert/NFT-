@@ -33,7 +33,7 @@ const Convertvideo = () => {
   return (
     <Videocontainer>
         
-        <embed src={Gif}  />  
+        <embed data-aos="zoom-in" data-aos-duration="1500" src={Gif}  />  
     </Videocontainer>
   )
 }

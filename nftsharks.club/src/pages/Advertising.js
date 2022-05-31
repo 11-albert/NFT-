@@ -64,7 +64,7 @@ const Box = styled.div`
 const Advertising = () => {
   return (
     <Section id="testimonials">
-       <Title>TESTIMONIALS</Title>
+       <Title data-aos="zoom-in" data-aos-duration="1500">CLIENTS</Title>
       <div class="owl-carousel owl-theme">
           <div>
              

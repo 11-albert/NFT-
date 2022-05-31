@@ -36,7 +36,7 @@ span{
 const Section1 = () => {
   return (
     <Section>
-        <Title>What is the future of NFT?</Title>
+        <Title data-aos="zoom-in" data-aos-duration="1500">What is the future of NFT?</Title>
         <Text>Experts in the crypto industry, including David Gerard, estimate that<span> 40% </span>of new users will use NFTs 
             to get started. NFT has become a larger part of the digital economy due to its popularity.
         </Text>

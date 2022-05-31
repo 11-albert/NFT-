@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import Typewriter from 'typewriter-effect';
-import Button from './Button';
+// import Typewriter from 'typewriter-effect';
+// import Button from './Button';
 
 const Title = styled.h1`
 font-family: 'Oswald', sans-serif;
@@ -84,6 +84,7 @@ cursor: pointer;
     transform: translate(-50%, -50% ) scale(1);
     padding: .3rem;
 }
+
 `
 
 const scrollTo = (id)=>{
@@ -99,9 +100,9 @@ const scrollTo = (id)=>{
 const Typewritereffect = () => {
   return (
     <>
-    <Title>
+    <Title  data-aos="zoom-in" data-aos-duration="1500">
         Marketing for the Digital Age!
-        <Typewriter 
+        {/* <Typewriter 
         options={{
             autoStart: true,
             loop: true,
@@ -118,14 +119,14 @@ const Typewritereffect = () => {
             .deleteAll()
             .start()
         }}
-        />
+        /> */}
     </Title>
     <Subtitle>
         {/* Bored Of Apes? Try Something New. */}
     </Subtitle>
     <BtnContainer>
        {/* <Button text="Explore"/> */}
-       <Btn onClick={()=> scrollTo('services')}>Explore</Btn>
+       <Btn data-aos="zoom-in" data-aos-duration="1500" onClick={()=> scrollTo('services')}>Explore</Btn>
     </BtnContainer>
     
     </>

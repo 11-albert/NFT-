@@ -32,12 +32,12 @@ margin: 0 auto;
 const Testimonials = () => {
   return (
     <>
-    <Title1>Advantages Of Hiring The Best NFT Marketing Agency</Title1>
+    <Title1 data-aos="zoom-in" data-aos-duration="1500">Advantages Of Hiring The Best NFT Marketing Agency</Title1>
     <div class="owl-carousel owl-theme">
         
       <div>
     
-        <Container>
+        <Container >
             <SubTitle>Marketing Experts:</SubTitle>
             <Text1>We have a bunch of expertise in our NFT Marketing agency to assist our global customers by opening
                 doors to new strategies that shape their business according to their desires.

@@ -20,7 +20,7 @@ display: flex;
     transform: scale(1.1);
 }
 img{
-  width: 180px;
+  width: 120px;
 }
 `
 const Logo = () => {

@@ -126,6 +126,12 @@ transition: all .3s ease;
 
 }
 `
+const Div = styled.div`
+width: 2rem;
+height: 25px;
+/* border: 2px solid #000; */
+cursor: pointer;
+`
 const Btn = styled.button`
 display: inline-block;
 outline: none;
@@ -139,6 +145,7 @@ border-radius: 50px;
 transition: all .2s ease;
 position: relative;
 cursor: pointer;
+
 
 &:hover{
     transform: scale(0.9);
@@ -160,6 +167,7 @@ cursor: pointer;
     transform: translate(-50%, -50% ) scale(1);
     padding: .3rem;
 }
+
 `
 
 const Nav = () => {
@@ -180,17 +188,19 @@ const Nav = () => {
   
   return (
     
-    <Section id='nav' onClick={()=> setClick(!click)}>
+    <Section id='nav' >
       <NavBar>
         <Logo/>
         <Hamburger click={click} onClick={()=> setClick(!click)}>
-          &nbsp;
+          <Div>
+            &nbsp;
+          </Div>
         </Hamburger>
-        <Menu click={click}>
+        <Menu click={click} onClick={()=> setClick(!click)}>
           <MenuItem onClick={()=> scrollTo('nav')}>Home</MenuItem>
           <MenuItem onClick={()=> scrollTo('About')}>About</MenuItem>
           <MenuItem onClick={()=> scrollTo('services')}>Service</MenuItem>
-          <MenuItem onClick={()=> scrollTo('testimonials')}>Testimonials</MenuItem>
+          <MenuItem onClick={()=> scrollTo('testimonials')}>Clients</MenuItem>
           <MenuItem>
           <div className='mobile'>
             {/* <Button text="Contact" onClick={()=> scrollTo('About')}/> */}
