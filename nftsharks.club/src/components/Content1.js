@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Gif from '../video/crypto cows testimon.gif'
+
 import "../components/styleAttribute.css"
 
 
@@ -51,17 +51,17 @@ const Overlay = styled.div`
 const Card = styled.div`
 
 `
-const Content1 = () => {
+const Content1 = ({video, title}) => {
   return (
     <>
     <div className="container">
     <div className='card'>
          <div className="imageBox">
-            <embed src={Gif}  />
+            <embed src={video}  />
          </div>
          <div className="contentBox">
            <div className="content">
-             <h3>CryptoCows</h3>
+             <h3>{title}</h3>
            </div>
            
          </div>

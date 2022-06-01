@@ -1,6 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 import Content1 from '../components/Content1'
+import Gif from '../video/crypto cows testimon.gif'
+import Gif1 from '../video/Bapez.gif'
+import Gif2 from '../video/Crypto Gnomes.gif'
+import Gif3 from '../video/Dino Society.gif'
+import Gif4 from '../video/Trash Piles.gif'
+import Gif5 from '../video/Trophy Hunters gif.gif'
 
 
 
@@ -70,7 +76,7 @@ const Advertising = () => {
              
               <Container>
                   <Box>
-                    <Content1/>
+                    <Content1 video={Gif} title="CryptoCows"/>
                   </Box>
               </Container>
           </div>
@@ -78,10 +84,43 @@ const Advertising = () => {
               
               <Container>
                   <Box>
-                    <Content1/>
+                    <Content1 video={Gif1} title="Bapez"/>
                   </Box>
               </Container>
           </div>
+          <div>
+              
+              <Container>
+                  <Box>
+                    <Content1 video={Gif2} title="CryptoGnomes"/>
+                  </Box>
+              </Container>
+          </div>
+          <div>
+              
+              <Container>
+                  <Box>
+                    <Content1 video={Gif3} title="DinoSociety"/>
+                  </Box>
+              </Container>
+          </div>
+          <div>
+              
+              <Container>
+                  <Box>
+                    <Content1 video={Gif4} title="TrashPiles"/>
+                  </Box>
+              </Container>
+          </div>
+          <div>
+              
+              <Container>
+                  <Box>
+                    <Content1 video={Gif5} title="TrophyHunters "/>
+                  </Box>
+              </Container>
+          </div>
+
       </div>
     </Section>
 
